@@ -19,4 +19,4 @@ public class HotelrevApplication {
 
 }
 
-//INI COBA COBA
+//Ini pake cmd intelij
