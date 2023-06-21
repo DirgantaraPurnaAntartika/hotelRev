@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "customers")
@@ -19,9 +20,11 @@ public class Customer {
     @Column(name = "id_cust")
     private Integer idCust;
 
+    @NotNull
     @Column(name = "name")
     private String name;
 
+    @NotNull
     @Column(name = "age")
     private Integer age;
 }

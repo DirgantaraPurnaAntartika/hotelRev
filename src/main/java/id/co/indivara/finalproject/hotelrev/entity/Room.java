@@ -25,7 +25,7 @@ public class Room {
     @Column(name = "room_type")
     private String roomType;
 
-    @Column(name = "room_available") //cobacoba
+    @Column(name = "room_available")
     private Boolean roomAvailable;
 
     @Column(name = "room_description")
