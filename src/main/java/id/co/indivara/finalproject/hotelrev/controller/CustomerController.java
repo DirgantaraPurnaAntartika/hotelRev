@@ -54,7 +54,7 @@ public class CustomerController {
                 roomRepo.save(room);
                 return new ResponseMessage(100,"reserve berhasil, nomer kamar " + room.getRoomNumber());
             }
-            return new ResponseMessage(100,"reserve berhasil");
+            return new ResponseMessage();
         } catch (Exception ex){
             return new ResponseMessage(001,"Reserve gagal " +ex.getMessage());
         }
@@ -75,7 +75,7 @@ public class CustomerController {
                     return new ResponseMessage(001, "Kamar telah di reserve");
                 }
             }
-            return new ResponseMessage(100, "customer " + customer.getName() + "berhasil check in"); //R
+            return new ResponseMessage(); //R
         } catch (Exception ex) {
             return new ResponseMessage(001, "Checkin Gagal " + ex.getMessage());
         }
